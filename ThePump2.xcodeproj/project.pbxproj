@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF251BDC2AD6E7F300CDEBC9 /* ThePump2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF251BDB2AD6E7F300CDEBC9 /* ThePump2App.swift */; };
+		CF251BDE2AD6E7F300CDEBC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF251BDD2AD6E7F300CDEBC9 /* ContentView.swift */; };
+		CF251BE02AD6E7F500CDEBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF251BDF2AD6E7F500CDEBC9 /* Assets.xcassets */; };
+		CF251BE32AD6E7F500CDEBC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF251BE22AD6E7F500CDEBC9 /* Preview Assets.xcassets */; };
+		CF39049D2AF45E5B00510B21 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39049C2AF45E5B00510B21 /* AddExerciseView.swift */; };
+		CF39049F2AF4626A00510B21 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39049E2AF4626A00510B21 /* GlobalData.swift */; };
+		CF9CA33E2ADB4DD3006D72E4 /* SignUpWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA33D2ADB4DD3006D72E4 /* SignUpWithAppleButton.swift */; };
+		CF9CA3402ADB4FFA006D72E4 /* SignUpWithGoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA33F2ADB4FFA006D72E4 /* SignUpWithGoogleButton.swift */; };
+		CF9CA3422ADB557E006D72E4 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA3412ADB557E006D72E4 /* SignUpForm.swift */; };
+		CF9CA3452ADB5998006D72E4 /* SignUpEmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA3442ADB5998006D72E4 /* SignUpEmailButton.swift */; };
+		CF9CA3472ADF4F12006D72E4 /* RoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA3462ADF4F12006D72E4 /* RoutinesView.swift */; };
+		CF9CA3492ADF5666006D72E4 /* RoutinesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA3482ADF5666006D72E4 /* RoutinesCell.swift */; };
+		CF9CA34B2AE09B80006D72E4 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA34A2AE09B80006D72E4 /* RoutineView.swift */; };
+		CF9CA34D2AE09BE6006D72E4 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA34C2AE09BE6006D72E4 /* ExerciseView.swift */; };
+		CF9CA34F2AE0A14B006D72E4 /* SetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA34E2AE0A14B006D72E4 /* SetsCell.swift */; };
+		CFBC51662AFEA53E008881E7 /* AddRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC51652AFEA53E008881E7 /* AddRoutineView.swift */; };
+		CFDFA5D32AF1D5A9006EF6E1 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDFA5D22AF1D5A9006EF6E1 /* Routine.swift */; };
+		CFDFA5D62AF1D8EB006EF6E1 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDFA5D52AF1D8EB006EF6E1 /* Exercise.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF251BD82AD6E7F300CDEBC9 /* ThePump2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePump2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF251BDB2AD6E7F300CDEBC9 /* ThePump2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePump2App.swift; sourceTree = "<group>"; };
+		CF251BDD2AD6E7F300CDEBC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF251BDF2AD6E7F500CDEBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF251BE22AD6E7F500CDEBC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF39049C2AF45E5B00510B21 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		CF39049E2AF4626A00510B21 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
+		CF9CA33D2ADB4DD3006D72E4 /* SignUpWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithAppleButton.swift; sourceTree = "<group>"; };
+		CF9CA33F2ADB4FFA006D72E4 /* SignUpWithGoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithGoogleButton.swift; sourceTree = "<group>"; };
+		CF9CA3412ADB557E006D72E4 /* SignUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpForm.swift; sourceTree = "<group>"; };
+		CF9CA3442ADB5998006D72E4 /* SignUpEmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailButton.swift; sourceTree = "<group>"; };
+		CF9CA3462ADF4F12006D72E4 /* RoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesView.swift; sourceTree = "<group>"; };
+		CF9CA3482ADF5666006D72E4 /* RoutinesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesCell.swift; sourceTree = "<group>"; };
+		CF9CA34A2AE09B80006D72E4 /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
+		CF9CA34C2AE09BE6006D72E4 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		CF9CA34E2AE0A14B006D72E4 /* SetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsCell.swift; sourceTree = "<group>"; };
+		CFBC51652AFEA53E008881E7 /* AddRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoutineView.swift; sourceTree = "<group>"; };
+		CFDFA5D22AF1D5A9006EF6E1 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		CFDFA5D52AF1D8EB006EF6E1 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF251BD52AD6E7F300CDEBC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF251BCF2AD6E7F300CDEBC9 = {
+			isa = PBXGroup;
+			children = (
+				CF251BDA2AD6E7F300CDEBC9 /* ThePump2 */,
+				CF251BD92AD6E7F300CDEBC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF251BD92AD6E7F300CDEBC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF251BD82AD6E7F300CDEBC9 /* ThePump2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF251BDA2AD6E7F300CDEBC9 /* ThePump2 */ = {
+			isa = PBXGroup;
+			children = (
+				CF251BDB2AD6E7F300CDEBC9 /* ThePump2App.swift */,
+				CF251BDD2AD6E7F300CDEBC9 /* ContentView.swift */,
+				CF9CA3432ADB5959006D72E4 /* SignUpFormView */,
+				CF8D82022AE7353600E35615 /* RoutineView */,
+				CF251BDF2AD6E7F500CDEBC9 /* Assets.xcassets */,
+				CFDFA5D42AF1D8E1006EF6E1 /* Model */,
+				CF251BE12AD6E7F500CDEBC9 /* Preview Content */,
+			);
+			path = ThePump2;
+			sourceTree = "<group>";
+		};
+		CF251BE12AD6E7F500CDEBC9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF251BE22AD6E7F500CDEBC9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF8D82022AE7353600E35615 /* RoutineView */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CA34A2AE09B80006D72E4 /* RoutineView.swift */,
+				CF9CA3462ADF4F12006D72E4 /* RoutinesView.swift */,
+				CF9CA3482ADF5666006D72E4 /* RoutinesCell.swift */,
+				CFBC51652AFEA53E008881E7 /* AddRoutineView.swift */,
+				CF8D82032AE7355000E35615 /* ExerciseView */,
+			);
+			path = RoutineView;
+			sourceTree = "<group>";
+		};
+		CF8D82032AE7355000E35615 /* ExerciseView */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CA34C2AE09BE6006D72E4 /* ExerciseView.swift */,
+				CF9CA34E2AE0A14B006D72E4 /* SetsCell.swift */,
+				CF39049C2AF45E5B00510B21 /* AddExerciseView.swift */,
+			);
+			path = ExerciseView;
+			sourceTree = "<group>";
+		};
+		CF9CA3432ADB5959006D72E4 /* SignUpFormView */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CA3412ADB557E006D72E4 /* SignUpForm.swift */,
+				CF9CA33D2ADB4DD3006D72E4 /* SignUpWithAppleButton.swift */,
+				CF9CA33F2ADB4FFA006D72E4 /* SignUpWithGoogleButton.swift */,
+				CF9CA3442ADB5998006D72E4 /* SignUpEmailButton.swift */,
+			);
+			path = SignUpFormView;
+			sourceTree = "<group>";
+		};
+		CFDFA5D42AF1D8E1006EF6E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFDFA5D22AF1D5A9006EF6E1 /* Routine.swift */,
+				CFDFA5D52AF1D8EB006EF6E1 /* Exercise.swift */,
+				CF39049E2AF4626A00510B21 /* GlobalData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF251BD72AD6E7F300CDEBC9 /* ThePump2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF251BE62AD6E7F500CDEBC9 /* Build configuration list for PBXNativeTarget "ThePump2" */;
+			buildPhases = (
+				CF251BD42AD6E7F300CDEBC9 /* Sources */,
+				CF251BD52AD6E7F300CDEBC9 /* Frameworks */,
+				CF251BD62AD6E7F300CDEBC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThePump2;
+			productName = ThePump2;
+			productReference = CF251BD82AD6E7F300CDEBC9 /* ThePump2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF251BD02AD6E7F300CDEBC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CF251BD72AD6E7F300CDEBC9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CF251BD32AD6E7F300CDEBC9 /* Build configuration list for PBXProject "ThePump2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF251BCF2AD6E7F300CDEBC9;
+			productRefGroup = CF251BD92AD6E7F300CDEBC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF251BD72AD6E7F300CDEBC9 /* ThePump2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF251BD62AD6E7F300CDEBC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF251BE32AD6E7F500CDEBC9 /* Preview Assets.xcassets in Resources */,
+				CF251BE02AD6E7F500CDEBC9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF251BD42AD6E7F300CDEBC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9CA34B2AE09B80006D72E4 /* RoutineView.swift in Sources */,
+				CF9CA3422ADB557E006D72E4 /* SignUpForm.swift in Sources */,
+				CFDFA5D32AF1D5A9006EF6E1 /* Routine.swift in Sources */,
+				CF9CA34F2AE0A14B006D72E4 /* SetsCell.swift in Sources */,
+				CF9CA33E2ADB4DD3006D72E4 /* SignUpWithAppleButton.swift in Sources */,
+				CF9CA3452ADB5998006D72E4 /* SignUpEmailButton.swift in Sources */,
+				CF39049F2AF4626A00510B21 /* GlobalData.swift in Sources */,
+				CF9CA34D2AE09BE6006D72E4 /* ExerciseView.swift in Sources */,
+				CF251BDE2AD6E7F300CDEBC9 /* ContentView.swift in Sources */,
+				CFBC51662AFEA53E008881E7 /* AddRoutineView.swift in Sources */,
+				CF9CA3402ADB4FFA006D72E4 /* SignUpWithGoogleButton.swift in Sources */,
+				CFDFA5D62AF1D8EB006EF6E1 /* Exercise.swift in Sources */,
+				CF39049D2AF45E5B00510B21 /* AddExerciseView.swift in Sources */,
+				CF251BDC2AD6E7F300CDEBC9 /* ThePump2App.swift in Sources */,
+				CF9CA3492ADF5666006D72E4 /* RoutinesCell.swift in Sources */,
+				CF9CA3472ADF4F12006D72E4 /* RoutinesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF251BE42AD6E7F500CDEBC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF251BE52AD6E7F500CDEBC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF251BE72AD6E7F500CDEBC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThePump2/Preview Content\"";
+				DEVELOPMENT_TEAM = MJM7Y2WC88;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PartyPats.ThePump2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF251BE82AD6E7F500CDEBC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThePump2/Preview Content\"";
+				DEVELOPMENT_TEAM = MJM7Y2WC88;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PartyPats.ThePump2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF251BD32AD6E7F300CDEBC9 /* Build configuration list for PBXProject "ThePump2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF251BE42AD6E7F500CDEBC9 /* Debug */,
+				CF251BE52AD6E7F500CDEBC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF251BE62AD6E7F500CDEBC9 /* Build configuration list for PBXNativeTarget "ThePump2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF251BE72AD6E7F500CDEBC9 /* Debug */,
+				CF251BE82AD6E7F500CDEBC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF251BD02AD6E7F300CDEBC9 /* Project object */;
+}
