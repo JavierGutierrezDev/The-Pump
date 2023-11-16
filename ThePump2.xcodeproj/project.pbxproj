@@ -23,6 +23,7 @@
 		CF9CA34D2AE09BE6006D72E4 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA34C2AE09BE6006D72E4 /* ExerciseView.swift */; };
 		CF9CA34F2AE0A14B006D72E4 /* SetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CA34E2AE0A14B006D72E4 /* SetsCell.swift */; };
 		CFBC51662AFEA53E008881E7 /* AddRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC51652AFEA53E008881E7 /* AddRoutineView.swift */; };
+		CFDC062F2B0593A1008AFCCC /* ExerciseOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC062E2B0593A1008AFCCC /* ExerciseOptions.swift */; };
 		CFDFA5D32AF1D5A9006EF6E1 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDFA5D22AF1D5A9006EF6E1 /* Routine.swift */; };
 		CFDFA5D62AF1D8EB006EF6E1 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDFA5D52AF1D8EB006EF6E1 /* Exercise.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		CF9CA34C2AE09BE6006D72E4 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		CF9CA34E2AE0A14B006D72E4 /* SetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsCell.swift; sourceTree = "<group>"; };
 		CFBC51652AFEA53E008881E7 /* AddRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoutineView.swift; sourceTree = "<group>"; };
+		CFDC062E2B0593A1008AFCCC /* ExerciseOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseOptions.swift; sourceTree = "<group>"; };
 		CFDFA5D22AF1D5A9006EF6E1 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		CFDFA5D52AF1D8EB006EF6E1 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				CF9CA34C2AE09BE6006D72E4 /* ExerciseView.swift */,
 				CF9CA34E2AE0A14B006D72E4 /* SetsCell.swift */,
 				CF39049C2AF45E5B00510B21 /* AddExerciseView.swift */,
+				CFDC062E2B0593A1008AFCCC /* ExerciseOptions.swift */,
 			);
 			path = ExerciseView;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				CF9CA3402ADB4FFA006D72E4 /* SignUpWithGoogleButton.swift in Sources */,
 				CFDFA5D62AF1D8EB006EF6E1 /* Exercise.swift in Sources */,
 				CF39049D2AF45E5B00510B21 /* AddExerciseView.swift in Sources */,
+				CFDC062F2B0593A1008AFCCC /* ExerciseOptions.swift in Sources */,
 				CF251BDC2AD6E7F300CDEBC9 /* ThePump2App.swift in Sources */,
 				CF9CA3492ADF5666006D72E4 /* RoutinesCell.swift in Sources */,
 				CF9CA3472ADF4F12006D72E4 /* RoutinesView.swift in Sources */,

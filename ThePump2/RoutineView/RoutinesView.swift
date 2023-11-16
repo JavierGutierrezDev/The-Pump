@@ -31,21 +31,22 @@ struct RoutinesView: View {
                 
             }
             
+            HStack{
+                Button("Add routine", systemImage: "plus") {
+                    isNewRoutine.toggle()
+                }
+                .sheet(isPresented: $isNewRoutine) {
+                    AddRoutineView()
+                }
+                RoutinesActionButton(descriptionAction: "Explore",
+                                     symbol: "magnifyingglass")
+            }
         }
         .navigationTitle("Routines")
         
         
         
-        HStack{
-            Button("Add routine", systemImage: "plus") {
-                isNewRoutine.toggle()
-            }
-            .sheet(isPresented: $isNewRoutine) { 
-                AddRoutineView()
-            }
-            RoutinesActionButton(descriptionAction: "Explore",
-                                 symbol: "magnifyingglass")
-        }
+        
     }
 }
 

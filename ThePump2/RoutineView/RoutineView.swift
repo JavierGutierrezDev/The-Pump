@@ -44,6 +44,11 @@ struct RoutineView: View {
                                 // Guardar los cambios en el contexto de Core Data
                                 try? context.save()
                         }
+                        
+                        Button("Edit", systemImage: "pencil", role: .none) {
+                            print("Edit -->\(exercise.exerciseName.wrappedValue)")
+                        }
+                        .foregroundStyle(.primary)
                     }
                     
                 }

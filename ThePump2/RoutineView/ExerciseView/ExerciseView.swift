@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ExerciseView: View {
     @Binding var exercise : Exercise
+    
     @Environment (\.modelContext) var context
     @State var anotationText : String = ""
     var body: some View {
@@ -32,7 +33,15 @@ struct ExerciseView: View {
                     
                 }
                 
-                
+                Button(action: {
+                    print(exercise.exerciseName)
+                                    }, label: {
+                    Image(systemName: "trash")
+                        .resizable()
+                        .frame(width: 20,height: 20)
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundStyle(.red)
+                })
                 Spacer()
             }
             .frame(width: .infinity)
@@ -51,6 +60,7 @@ struct ExerciseView: View {
                 
                 ForEach($exercise.sets.sorted { $0.wrappedValue.creationDate < $1.wrappedValue.creationDate }, id: \.wrappedValue.id) { set in
                     SetsCell(set: set)
+                        
                 }
 
                 Button("New Set", systemImage: "plus") {
