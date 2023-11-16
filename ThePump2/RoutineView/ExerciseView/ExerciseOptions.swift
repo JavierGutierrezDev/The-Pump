@@ -9,25 +9,32 @@ import SwiftUI
 
 struct ExerciseOptions: View {
     var body: some View {
-        VStack{
+        ZStack{
+            Color("lightBlack", bundle: .main)
+                .opacity(0.7)
+                .ignoresSafeArea(edges: .all)
             
+            VStack{
+                
+                Spacer()
+                
+                
+                CustomOptionCell(labelText: "Reorder", systemImage: "arrow.up.arrow.down")
+                CustomOptionCell(labelText: "Replace", systemImage: "arrow.triangle.2.circlepath")
+                CustomOptionCell(labelText: "Add to superset", systemImage: "plus")
+                CustomOptionCell(labelText: "Delete", systemImage: "xmark")
+                    .foregroundStyle(.red)
+                //Celda que no se muestra
+                Rectangle()
+                    .frame(height: 35)
+                    .hidden()
+                
+                CustomOptionCell(labelText: "Cancel")
+                
+            }
             
-            CustomOptionCell(labelText: "Reorder", systemImage: "arrow.up.arrow.down")
-            CustomOptionCell(labelText: "Replace", systemImage: "arrow.triangle.2.circlepath")
-            CustomOptionCell(labelText: "Add to superset", systemImage: "plus")
-            CustomOptionCell(labelText: "Delete", systemImage: "xmark")
-                .foregroundStyle(.red)
-            //Celda que no se muestra
-            Rectangle()
-                .frame(height: 35)
-                .hidden()
-            
-            CustomOptionCell(labelText: "Cancel")
             
         }
-        
-        
-
     }
 }
 

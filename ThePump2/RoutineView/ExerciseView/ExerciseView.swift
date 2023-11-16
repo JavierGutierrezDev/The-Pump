@@ -35,12 +35,12 @@ struct ExerciseView: View {
                 
                 Button(action: {
                     print(exercise.exerciseName)
+                    
                                     }, label: {
-                    Image(systemName: "trash")
+                    Image(systemName: "ellipsis")
                         .resizable()
-                        .frame(width: 20,height: 20)
                         .aspectRatio(contentMode: .fit)
-                        .foregroundStyle(.red)
+                        .frame(width: 20,height: 20)
                 })
                 Spacer()
             }
@@ -75,3 +75,7 @@ struct ExerciseView: View {
 //#Preview {
 //    ExerciseView(sets: [0,0])
 //}
+
+
+
+
