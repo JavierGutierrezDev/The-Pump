@@ -33,6 +33,11 @@ class Exercise : Identifiable {
             sets.append(newSet)
             
         }
+    func deleteSet(){
+        if !self.sets.isEmpty{
+            self.sets.removeLast()
+        }
+    }
 }
 
 enum SetType: String, Codable,CaseIterable, Identifiable {
