@@ -23,7 +23,7 @@ struct AddExerciseView: View {
                     let exercise : Exercise = Exercise(imageName:
                                                         exerciseNames[index].exerciseImage
                                                        ,exerciseName: exerciseNames[index].exerciseName,
-                                                        anotation: "test annotation",
+                                                        anotation: "",
                                                         sets: []
                                     )
                     routine.exercises.append(exercise)
