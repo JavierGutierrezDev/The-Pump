@@ -11,7 +11,7 @@ import SwiftData
 @Model
 class Exercise : Identifiable {
     let id: UUID
-    let creationDate: Date
+    var creationDate: Date
 
     var imageName : String
     var exerciseName : String

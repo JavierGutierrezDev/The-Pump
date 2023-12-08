@@ -48,12 +48,15 @@ struct SetsCell: View {
                 get: { set.weights != 0.0 ? "\(set.weights)" : "" },
                 set: { set.weights = Float($0) ?? set.weights }
             ))
+            .keyboardType(.decimalPad)
             
             
             TextField("Reps", text: Binding(
                 get: { set.reps != 0 ? "\(set.reps)" : "" },
                 set: { set.reps = Int($0) ?? set.reps }
             ))
+            .keyboardType(.decimalPad)
+
 
             Button(action: {
                 isCompleted.toggle()
@@ -65,6 +68,8 @@ struct SetsCell: View {
             })
         }
         .padding()
+       
+        
         
         
     }
