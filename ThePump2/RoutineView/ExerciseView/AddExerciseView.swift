@@ -11,7 +11,8 @@ import SwiftData
 struct AddExerciseView: View {
     @Environment (\.modelContext) var context
     @Environment (\.dismiss) var dismiss
-    var routine : Routine
+    var exerciseToReplace : Exercise?
+    @Binding var routine : Routine
     @Query(animation: .bouncy) private var exercises : [Exercise]
      var exerciseNames = GlobalData.shared.exerciseNames
         var body: some View {
@@ -25,7 +26,15 @@ struct AddExerciseView: View {
                                                        ,exerciseName: exerciseNames[index].exerciseName,
                                                         anotation: "",
                                                         sets: []
+                                                       
                                     )
+                    //Codigo para reusar en remplazar ejercicio
+                    if(exerciseToReplace != nil){
+                        exercise.creationDate = exerciseToReplace!.creationDate
+                        routine.exercises.remove(at: routine.exercises.firstIndex(of: exerciseToReplace!)!)
+                        
+                        
+                    }
                     routine.exercises.append(exercise)
                     context.insert(routine)
                     dismiss.callAsFunction()
