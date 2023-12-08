@@ -7,11 +7,27 @@
 
 import SwiftUI
 
+
+enum MenuOptionsSheets : CaseIterable,Identifiable{
+    
+    //Casos de vistas para el menú de opciones de los ejercicios
+    case reorder, replace,superset
+    
+    var id : Self {self}
+    //función que devuelve la vista correspondiente segun el boton del menú que se pulse
+//    func returnView() -> any View {
+//        
+//    }
+}
+
 struct ExerciseView: View {
     @Binding var exercise : Exercise
     @Binding var routine : Routine
     @Environment (\.modelContext) var context
     @State var anotationText : String = ""
+    
+    //propiedad para retornar vistas segun la opcion que escoja el usuario del ejercicio
+    @State private var menuOptionView : MenuOptionsSheets?
     var body: some View {
         VStack{
             
@@ -39,26 +55,35 @@ struct ExerciseView: View {
                 //Menu de opciones relacionadas con el ejercicio
                 Menu("", systemImage: "ellipsis") {
                     Button("Reorder", systemImage: "arrow.up.arrow.down") {
-                        
+                        menuOptionView = .reorder
                     }
-                    Button("Replace", systemImage:"arrow.triangle.2.circlepath") {
-                        
-                    }
-                    Button("Add to superset", systemImage:"plus") {
-                        
-                    }
-                    Button("Delete", systemImage:"xmark", role: .destructive) {
-                        // Eliminar el ejercicio del modelo de datos de SwiftUI
-                        routine.exercises.remove(at: routine.exercises.firstIndex(of: exercise)!)
                     
-                        // Guardar los cambios en el contexto de Core Data
-                        
-                        try? context.save()
+                    Button("Replace", systemImage:"arrow.triangle.2.circlepath") {
+                        menuOptionView = .replace
+                    }
+                    
+                    Button("Add to superset", systemImage:"plus") {
+                        menuOptionView = .superset
+                    }
+                    
+                    Button("Delete", systemImage:"xmark", role: .destructive) {
+                        deleteExercise(exercise: exercise)
                     }
                 }
                 .foregroundStyle(.foreground)
                 .padding(.horizontal)
-
+                .sheet(item: $menuOptionView) { option in
+                    switch option{
+                    case .reorder:
+                        ReorderExercise(routine: $routine)
+                    case .replace:
+                        AddExerciseView(exerciseToReplace: exercise, routine: $routine)
+                        
+                    case .superset:
+                        ExerciseView(exercise: $exercise, routine: $routine)
+                    }
+                }
+                
                 Spacer()
             }
             .frame(width: .infinity)
@@ -71,10 +96,10 @@ struct ExerciseView: View {
             .foregroundStyle(.foreground)
             
             ScrollView{
-                	
+                
                 ForEach($exercise.sets.sorted { $0.wrappedValue.creationDate < $1.wrappedValue.creationDate }, id: \.wrappedValue.id) { set in
                     SetsCell(set: set)
-                        
+                    
                 }
                 HStack(){
                     
@@ -83,16 +108,21 @@ struct ExerciseView: View {
                     }
                     .padding(.horizontal)
                     Button("Delete Set", systemImage: "trash", role: .destructive) {
-                        
                         exercise.deleteSet()
                     }
                     .padding(.horizontal)
-
+                    
                 }
             }
             
             
         }
+    }
+    func deleteExercise(exercise:Exercise){
+        // Eliminar el ejercicio del modelo de datos de SwiftUI
+        routine.exercises.remove(at: routine.exercises.firstIndex(of: exercise)!)
+        // Guardar los cambios en el contexto de Core Data
+        try? context.save()
     }
 }
 
