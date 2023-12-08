@@ -17,32 +17,25 @@ El proyecto se encuentra actualmente en desarrollo. Comenzó como una herramient
 
 ## Imágenes 📸
 ### Rutinas creadas
-![Simulator Screenshot - iPhone 13 mini - 2023-12-08 at 23 27 04](https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/f9d71908-9a35-4e41-b37e-a27b5e6e9c09)
+<img src="https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/f9d71908-9a35-4e41-b37e-a27b5e6e9c09" width="250">
 
 ### Crear rutina
-![Simulator Screenshot - iPhone 13 mini - 2023-12-08 at 23 26 22](https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/d5ffaa13-461e-442b-969f-fd758b06adb4)
+<img src="https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/d5ffaa13-461e-442b-969f-fd758b06adb4" width="250">
 
 ### Vista de la rutina
-![Simulator Screenshot - iPhone 13 mini - 2023-12-08 at 23 30 03](https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/495e2b3a-a039-43f5-be1a-6acafbcb244c)
+<img src="https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/495e2b3a-a039-43f5-be1a-6acafbcb244c" width="250">
 
 ### Añadir ejercicio 
-![Simulator Screenshot - iPhone 13 mini - 2023-12-08 at 23 28 18](https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/ec05ea7b-69cc-4b95-8609-40baf050484e)
+<img src="https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/ec05ea7b-69cc-4b95-8609-40baf050484e" width="250">
 
 ### Personalizar serie
-![Simulator Screenshot - iPhone 13 mini - 2023-12-08 at 23 29 07](https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/bfa0c7c4-a01a-47b1-80e0-b6ce8cdf1004)
+<img src="https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/bfa0c7c4-a01a-47b1-80e0-b6ce8cdf1004" width="250">
 
 ### Modificar ejercicios
-![Simulator Screenshot - iPhone 13 mini - 2023-12-08 at 23 30 16](https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/492a52e5-34dc-4964-be58-e9c30f605834)
+<img src="https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/492a52e5-34dc-4964-be58-e9c30f605834" width="250">
 
 ### Reordenar ejercicios
-![Simulator Screenshot - iPhone 13 mini - 2023-12-08 at 23 31 00](https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/a550c227-6d9d-40af-b85a-86a32b7ac669)
+<img src="https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/a550c227-6d9d-40af-b85a-86a32b7ac669" width="250">
 
 ### Reemplazar ejercicios
-![Simulator Screenshot - iPhone 13 mini - 2023-12-08 at 23 31 26](https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/8c26ca7d-de63-4f3c-94be-da2cf4eeed25)
-
-
-
-
-
-
-
+<img src="https://github.com/JavierGutierrezDev/ThePump2/assets/136180101/8c26ca7d-de63-4f3c-94be-da2cf4eeed25" width="250">
