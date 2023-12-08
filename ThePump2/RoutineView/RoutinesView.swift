@@ -19,13 +19,7 @@ struct RoutinesView: View {
                 List{
                     ForEach(routines, id: \.self){ routine in
                         RoutinesCell(routine: routine)
-                            .swipeActions{
-                                Button(role: .destructive) {
-                                    context.delete(routine)
-                                } label: {
-                                    Label("Delete", systemImage: "trash")
-                                }
-                            }
+                            
                     }
                 }
                 

@@ -36,7 +36,7 @@ struct RoutineView: View {
             })
             .buttonStyle(.borderedProminent)
             .sheet(isPresented: $isCreateExerciseView, content: {
-                AddExerciseView(routine: routine)
+                AddExerciseView(routine: $routine)
                     
             })
             
@@ -52,6 +52,7 @@ struct RoutineView: View {
             .buttonStyle(.borderedProminent)
             
         }.navigationTitle(routine.name)
+        
         
     }
         
