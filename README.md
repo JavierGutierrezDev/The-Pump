@@ -43,8 +43,6 @@
 4. **Implementa Cambios:** Añade tus geniales ideas al proyecto.
 5. **Pull Request:** Envíanos tus mejoras para revisión.
 
-## 📬 Contacto
-¿Preguntas? ¿Sugerencias? Escríbenos a [tu correo electrónico].
 
-## ©️ Licencia
-Este proyecto está bajo la licencia [Nombre de la Licencia]. Consulta el archivo LICENSE para más detalles.
+
+
