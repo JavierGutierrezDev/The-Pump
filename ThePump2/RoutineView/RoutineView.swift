@@ -34,11 +34,13 @@ struct RoutineView: View {
             }, label: {
                 Label("Add exercise", systemImage: "plus")
             })
-            .buttonStyle(.borderedProminent)
+            .buttonStyle(.bordered)
             .sheet(isPresented: $isCreateExerciseView, content: {
-                AddExerciseView(routine: $routine)
+                AddExerciseView( routine: $routine)
                     
             })
+            
+            
             
             
 

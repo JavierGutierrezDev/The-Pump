@@ -18,6 +18,7 @@ struct ReorderExercise: View {
             .font(.title2)
             .padding()
         List {
+            
             ForEach($routine.exercises.sorted(by: { $0.wrappedValue.creationDate < $1.wrappedValue.creationDate }), id: \.id){exercise in
                 HStack{
                     Image( exercise.imageName.wrappedValue)
@@ -32,6 +33,7 @@ struct ReorderExercise: View {
                     Spacer()
                     
                     Button {
+                            
                         if(exercise1 == nil  ){
                             exercise1 = exercise.wrappedValue
                         }
@@ -42,7 +44,6 @@ struct ReorderExercise: View {
                                 var exercise2Date = exercise2?.creationDate
                                 exercise1?.creationDate = exercise2Date!
                                 exercise2?.creationDate = exercise1Date!
-                                
                                 exercise1 = nil
                                 exercise2 = nil
                                 
@@ -64,28 +65,13 @@ struct ReorderExercise: View {
                 }
 
             }
-//            .onMove(perform: move)
+            .animation(.spring, value: routine.exercises)
         }
         .padding(.vertical)
         
         
     }
-    
-//    func move(from source: IndexSet, to destination: Int){
-//       print("Move-->\(source)")
-//       print("Destination-->\(destination)")
-//        //array de ejercicios ordenados
-//        var exercises = routine.exercises.sorted(by: {$0.creationDate < $1.creationDate})
-//        
-//        print(exercises[source.first!].exerciseName)
-//
-//    }
+
 }
 
-//#Preview {
-//    ReorderExercise(
-//        routine: Routine(name: "Test",
-//                         exercises: [Exercise(imageName: "barbellSquat",exerciseName: "Barbell Squat",sets: [Set(reps: 12,weights: 22,setType: .dropset)])],
-//                         routineDescription: "testRoutineDescription"
-//                                    )
-//}
+

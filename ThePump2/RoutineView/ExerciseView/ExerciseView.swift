@@ -33,10 +33,17 @@ struct ExerciseView: View {
             
             
             HStack(alignment : .top){
-                Image(exercise.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 65, height: 65)
+                if let imageData = exercise.image, let uiImage = UIImage(data: imageData){
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 65, height: 65)
+                }else{
+                    Image(exercise.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 65, height: 65)
+                }
                 VStack(alignment: . leading){
                     Text(exercise.exerciseName)
                         .font(.title3)
@@ -62,9 +69,9 @@ struct ExerciseView: View {
                         menuOptionView = .replace
                     }
                     
-                    Button("Add to superset", systemImage:"plus") {
-                        menuOptionView = .superset
-                    }
+//                    Button("Add to superset", systemImage:"plus") {
+//                        menuOptionView = .superset
+//                    }
                     
                     Button("Delete", systemImage:"xmark", role: .destructive) {
                         deleteExercise(exercise: exercise)
@@ -77,10 +84,11 @@ struct ExerciseView: View {
                     case .reorder:
                         ReorderExercise(routine: $routine)
                     case .replace:
-                        AddExerciseView(exerciseToReplace: exercise, routine: $routine)
+                        AddExerciseView( exerciseToReplace: exercise, routine: $routine)
                         
                     case .superset:
                         ExerciseView(exercise: $exercise, routine: $routine)
+                        
                     }
                 }
                 

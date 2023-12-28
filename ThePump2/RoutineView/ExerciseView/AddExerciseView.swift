@@ -13,56 +13,61 @@ struct AddExerciseView: View {
     @Environment (\.dismiss) var dismiss
     var exerciseToReplace : Exercise?
     @Binding var routine : Routine
+    @State private var createExercise : Bool = false
     @Query(animation: .bouncy) private var exercises : [Exercise]
-     var exerciseNames = GlobalData.shared.exerciseNames
-        var body: some View {
+    var exerciseNames = GlobalData.shared.exerciseNames
+    var body: some View {
         List {
-            ForEach(0..<exerciseNames.count){index in
-                
-                Button(action: {
-                    //codigo para añadir el ejercicio a la rutina
-                    let exercise : Exercise = Exercise(imageName:
-                                                        exerciseNames[index].exerciseImage
-                                                       ,exerciseName: exerciseNames[index].exerciseName,
-                                                        anotation: "",
-                                                        sets: []
-                                                       
-                                    )
-                    //Codigo para reusar en remplazar ejercicio
-                    if(exerciseToReplace != nil){
-                        exercise.creationDate = exerciseToReplace!.creationDate
-                        routine.exercises.remove(at: routine.exercises.firstIndex(of: exerciseToReplace!)!)
-                        
-                        
-                    }
-                    routine.exercises.append(exercise)
-                    context.insert(routine)
-                    dismiss.callAsFunction()
-                }, label: {
-                    HStack(alignment : .center){
-                        Image(exerciseNames[index].exerciseImage)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 65, height: 65)
-                        VStack(alignment: . leading){
-                            Text(exerciseNames[index].exerciseName)
-                                .font(.title3)
+            Section("Custom exercise"){
+                AddCustomExerciseView(routine: $routine)
+            }
+            
+            Section("Preloaded exercises"){
+                ForEach(0..<exerciseNames.count){index in
+                    
+                    Button(action: {
+                        //codigo para añadir el ejercicio a la rutina
+                        let exercise : Exercise = Exercise(imageName:
+                                                            exerciseNames[index].exerciseImage
+                                                           ,exerciseName: exerciseNames[index].exerciseName,
+                                                           anotation: "",
+                                                           sets: []
+                                                           
+                        )
+                        //Codigo para reusar en remplazar ejercicio
+                        if(exerciseToReplace != nil){
+                            exercise.creationDate = exerciseToReplace!.creationDate
+                            routine.exercises.remove(at: routine.exercises.firstIndex(of: exerciseToReplace!)!)
+                            
                             
                         }
-                        
-                        Spacer()
-                    }
-                })
-                .foregroundStyle(.primary)
+                        routine.exercises.append(exercise)
+                        context.insert(routine)
+                        dismiss.callAsFunction()
+                    }, label: {
+                        HStack(alignment : .center){
+                            Image(exerciseNames[index].exerciseImage)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 65, height: 65)
+                            VStack(alignment: . leading){
+                                Text(exerciseNames[index].exerciseName)
+                                    .font(.title3)
                                 
-                
+                            }
+                            
+                            Spacer()
+                        }
+                    })
+                    .foregroundStyle(.primary)
+                    
+                    
+                }
             }
-            
             
         }
-            Button("Create new exercise", systemImage: "plus") {
-                
-            }
+        
+        
     }
 }
 

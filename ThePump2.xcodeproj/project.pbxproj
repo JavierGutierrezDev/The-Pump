@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1BB86E2B2B945100AD0185 /* AddCustomExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1BB86D2B2B945100AD0185 /* AddCustomExerciseView.swift */; };
 		CF251BDC2AD6E7F300CDEBC9 /* ThePump2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF251BDB2AD6E7F300CDEBC9 /* ThePump2App.swift */; };
 		CF251BDE2AD6E7F300CDEBC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF251BDD2AD6E7F300CDEBC9 /* ContentView.swift */; };
 		CF251BE02AD6E7F500CDEBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF251BDF2AD6E7F500CDEBC9 /* Assets.xcassets */; };
@@ -26,9 +27,13 @@
 		CFDC062F2B0593A1008AFCCC /* ExerciseOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC062E2B0593A1008AFCCC /* ExerciseOptions.swift */; };
 		CFDFA5D32AF1D5A9006EF6E1 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDFA5D22AF1D5A9006EF6E1 /* Routine.swift */; };
 		CFDFA5D62AF1D8EB006EF6E1 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDFA5D52AF1D8EB006EF6E1 /* Exercise.swift */; };
+		CFFE94AA2B1F790500AF23ED /* ReplaceExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE94A92B1F790500AF23ED /* ReplaceExercise.swift */; };
+		CFFE94AC2B1F790E00AF23ED /* ReorderExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE94AB2B1F790E00AF23ED /* ReorderExercise.swift */; };
+		CFFE94AE2B1F791E00AF23ED /* AddToSuperSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE94AD2B1F791E00AF23ED /* AddToSuperSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF1BB86D2B2B945100AD0185 /* AddCustomExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomExerciseView.swift; sourceTree = "<group>"; };
 		CF251BD82AD6E7F300CDEBC9 /* ThePump2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePump2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF251BDB2AD6E7F300CDEBC9 /* ThePump2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePump2App.swift; sourceTree = "<group>"; };
 		CF251BDD2AD6E7F300CDEBC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		CFDC062E2B0593A1008AFCCC /* ExerciseOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseOptions.swift; sourceTree = "<group>"; };
 		CFDFA5D22AF1D5A9006EF6E1 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		CFDFA5D52AF1D8EB006EF6E1 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		CFFE94A92B1F790500AF23ED /* ReplaceExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceExercise.swift; sourceTree = "<group>"; };
+		CFFE94AB2B1F790E00AF23ED /* ReorderExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderExercise.swift; sourceTree = "<group>"; };
+		CFFE94AD2B1F791E00AF23ED /* AddToSuperSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToSuperSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +123,12 @@
 		CF8D82032AE7355000E35615 /* ExerciseView */ = {
 			isa = PBXGroup;
 			children = (
+				CFFE94A82B1F78EA00AF23ED /* MenuOptionsViews */,
 				CF9CA34C2AE09BE6006D72E4 /* ExerciseView.swift */,
 				CF9CA34E2AE0A14B006D72E4 /* SetsCell.swift */,
 				CF39049C2AF45E5B00510B21 /* AddExerciseView.swift */,
 				CFDC062E2B0593A1008AFCCC /* ExerciseOptions.swift */,
+				CF1BB86D2B2B945100AD0185 /* AddCustomExerciseView.swift */,
 			);
 			path = ExerciseView;
 			sourceTree = "<group>";
@@ -142,6 +152,16 @@
 				CF39049E2AF4626A00510B21 /* GlobalData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CFFE94A82B1F78EA00AF23ED /* MenuOptionsViews */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE94A92B1F790500AF23ED /* ReplaceExercise.swift */,
+				CFFE94AB2B1F790E00AF23ED /* ReorderExercise.swift */,
+				CFFE94AD2B1F791E00AF23ED /* AddToSuperSet.swift */,
+			);
+			path = MenuOptionsViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,12 +236,15 @@
 			files = (
 				CF9CA34B2AE09B80006D72E4 /* RoutineView.swift in Sources */,
 				CF9CA3422ADB557E006D72E4 /* SignUpForm.swift in Sources */,
+				CF1BB86E2B2B945100AD0185 /* AddCustomExerciseView.swift in Sources */,
 				CFDFA5D32AF1D5A9006EF6E1 /* Routine.swift in Sources */,
 				CF9CA34F2AE0A14B006D72E4 /* SetsCell.swift in Sources */,
 				CF9CA33E2ADB4DD3006D72E4 /* SignUpWithAppleButton.swift in Sources */,
 				CF9CA3452ADB5998006D72E4 /* SignUpEmailButton.swift in Sources */,
 				CF39049F2AF4626A00510B21 /* GlobalData.swift in Sources */,
 				CF9CA34D2AE09BE6006D72E4 /* ExerciseView.swift in Sources */,
+				CFFE94AC2B1F790E00AF23ED /* ReorderExercise.swift in Sources */,
+				CFFE94AE2B1F791E00AF23ED /* AddToSuperSet.swift in Sources */,
 				CF251BDE2AD6E7F300CDEBC9 /* ContentView.swift in Sources */,
 				CFBC51662AFEA53E008881E7 /* AddRoutineView.swift in Sources */,
 				CF9CA3402ADB4FFA006D72E4 /* SignUpWithGoogleButton.swift in Sources */,
@@ -230,6 +253,7 @@
 				CFDC062F2B0593A1008AFCCC /* ExerciseOptions.swift in Sources */,
 				CF251BDC2AD6E7F300CDEBC9 /* ThePump2App.swift in Sources */,
 				CF9CA3492ADF5666006D72E4 /* RoutinesCell.swift in Sources */,
+				CFFE94AA2B1F790500AF23ED /* ReplaceExercise.swift in Sources */,
 				CF9CA3472ADF4F12006D72E4 /* RoutinesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

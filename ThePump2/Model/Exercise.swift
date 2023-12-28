@@ -12,7 +12,8 @@ import SwiftData
 class Exercise : Identifiable {
     let id: UUID
     var creationDate: Date
-
+    @Attribute(.externalStorage)
+    var image : Data?
     var imageName : String
     var exerciseName : String
     var anotation : String
@@ -26,6 +27,19 @@ class Exercise : Identifiable {
         self.exerciseName = exerciseName
         self.anotation = anotation
         self.sets = sets
+    }
+    
+    init(image : Data, exerciseName : String,imageName: String = "", anotation: String = "", sets: [Set] = []){
+        self.id = UUID()
+        self.creationDate = Date() // Guarda la fecha y hora actual
+
+        self.imageName = imageName
+        self.exerciseName = exerciseName
+        self.anotation = anotation
+        self.sets = sets
+        
+        self.image = image
+        self.exerciseName = exerciseName
     }
     
     func addSet(reps: Int , weights: Float, setType: SetType) {

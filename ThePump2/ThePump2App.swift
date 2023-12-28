@@ -15,6 +15,7 @@ struct ThePump2App: App {
             //ContentView()
         }
         .modelContainer(for: [Routine.self, Exercise.self], isAutosaveEnabled: true)
+        
 
     }
 }
