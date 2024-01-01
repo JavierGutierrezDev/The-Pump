@@ -32,8 +32,7 @@ struct RoutinesView: View {
                 .sheet(isPresented: $isNewRoutine) {
                     AddRoutineView()
                 }
-                RoutinesActionButton(descriptionAction: "Explore",
-                                     symbol: "magnifyingglass")
+                
             }
         }
         .navigationTitle("Routines")

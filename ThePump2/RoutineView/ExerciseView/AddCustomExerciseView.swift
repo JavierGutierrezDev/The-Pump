@@ -51,7 +51,7 @@ struct AddCustomExerciseView: View {
                        let data = try? await selectedItem.loadTransferable(type: Data.self){
                         let exercise = Exercise(image: data, exerciseName: exerciseName)
                         
-                        GlobalData.shared.exerciseNames.append((exerciseImage: exerciseName, exerciseName: exerciseName))
+//                        GlobalData.shared.exerciseNames.append((exerciseImage: exerciseName, exerciseName: exerciseName))
                         saveExercise(exercise: exercise)
                         dismiss()
                     }

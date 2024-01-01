@@ -98,7 +98,7 @@ struct ExerciseView: View {
             .padding()
             
             //Función del cronometro
-            Button("", systemImage: "alarm") {
+            Button("Timer", systemImage: "alarm") {
                 
             }
             .foregroundStyle(.foreground)
