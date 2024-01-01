@@ -48,8 +48,14 @@ class Exercise : Identifiable {
             
         }
     func deleteSet(){
+        //comprobación de si tiene set
         if !self.sets.isEmpty{
-            self.sets.removeLast()
+            //Encuentro el set más antiguo
+            let setToDelete = self.sets.min(by:{ $0.creationDate > $1.creationDate})!
+            //Capturo el indice y lo borro con el
+            if let index = sets.firstIndex(of: setToDelete){
+                sets.remove(at: index)
+            }
         }
     }
 }
