@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CustomTimer{
+class Chronometer{
     var timeRemaining : Int
     var duration : Int
     private var timer : Timer?
@@ -19,11 +19,28 @@ class CustomTimer{
     }
     
     
+    func stopTimer(){
+        timer?.invalidate()
+        isActive = false
+        timeRemaining = duration
+    }
+    
     func start(){
+        timer?.invalidate()
         timeRemaining = duration
         isActive = true
         
-        let timer2 = Timer
-        timer = Timer.scheduleTim
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
+            if self.timeRemaining > 0{
+                self.timeRemaining -= 1
+            }else{
+                self.stopTimer()
+            }
+        })
+    }
+    
+    func pause(){
+        timer?.invalidate()
+        isActive = false
     }
 }
